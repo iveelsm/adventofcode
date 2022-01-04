@@ -39,13 +39,13 @@ func ReactPolymer(polymer string) int {
 }
 
 func PartOne() {
-	data := readFile("data.txt")
+	data := readFile("inputs/puzzle.txt")
 	fmt.Println(ReactPolymer(data))
 }
 
 func PartTwo() {
 	alphabet := "abcdefghijklmnopqrstuvwxyz"
-	data := readFile("data.txt")
+	data := readFile("inputs/puzzle.txt")
 	minLength := math.MaxUint32
 	for _, el := range alphabet {
 		current := strings.ReplaceAll(data, string(el), "")

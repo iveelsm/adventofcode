@@ -81,7 +81,7 @@ func traverse(t Tree) string {
 }
 
 func PartOne() {
-	data := ParseFileData(readFile("data.txt"))
+	data := ParseFileData(readFile("inputs/puzzle.txt"))
 	tree := BuildTree(data)
 	result := traverse(tree)
 	fmt.Println(result)
@@ -127,7 +127,7 @@ func process(t Tree) int {
 }
 
 func PartTwo() {
-	data := ParseFileData(readFile("data.txt"))
+	data := ParseFileData(readFile("inputs/puzzle.txt"))
 	tree := BuildTree(data)
 	result := process(tree)
 	fmt.Println(result)

@@ -56,7 +56,7 @@ func countCharacters(data string) (int, int) {
 }
 
 func PartOne() {
-	data := parseData(readFile("data.txt"))
+	data := parseData(readFile("inputs/puzzle.txt"))
 	linesTwoChars := 0
 	linesThreeChars := 0
 	for _, el := range data {
@@ -85,7 +85,7 @@ func isWithinOne(a, b string) (bool, string) {
 }
 
 func PartTwo() {
-	data := parseData(readFile("data.txt"))
+	data := parseData(readFile("inputs/puzzle.txt"))
 	for i := 0; i < len(data); i++ {
 		for j := i + 1; j < len(data); j++ {
 			res, matched := isWithinOne(data[i], data[j])

@@ -28,7 +28,7 @@ func parseData(data string) []int {
 }
 
 func PartOne() {
-	data := parseData(readFile("data.txt"))
+	data := parseData(readFile("inputs/puzzle.txt"))
 	start := 0
 	for i := 0; i < len(data); i++ {
 		start = start + data[i]
@@ -37,7 +37,7 @@ func PartOne() {
 }
 
 func PartTwo() {
-	data := parseData(readFile("data.txt"))
+	data := parseData(readFile("inputs/puzzle.txt"))
 	frequencyMap := make(map[int]bool)
 	start := 0
 	dup := false

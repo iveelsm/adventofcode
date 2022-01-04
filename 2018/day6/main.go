@@ -102,7 +102,7 @@ func paintGrid(grid [][]int, data []Point) [][]int {
 }
 
 func PartOne() {
-	data := parseData(readFile("data.txt"))
+	data := parseData(readFile("inputs/puzzle.txt"))
 	grid, left, top := makeGrid(data)
 
 	for i, el := range data {
@@ -160,7 +160,7 @@ func paintGridTwo(grid [][]int, data []Point, tolerance int) [][]int {
 }
 
 func PartTwo() {
-	data := parseData(readFile("data.txt"))
+	data := parseData(readFile("inputs/puzzle.txt"))
 	tolerance := 10_000
 	grid, left, top := makeGrid(data)
 

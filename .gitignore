@@ -1,1 +1,2 @@
-data.txt
+# Ignore the puzzle inputs
+**/inputs/puzzle.txt

@@ -57,7 +57,7 @@ func parseData(data string, re *regexp.Regexp) []Claim {
 }
 
 func PartOne(re *regexp.Regexp) {
-	data := parseData(readFile("data.txt"), re)
+	data := parseData(readFile("inputs/puzzle.txt"), re)
 
 	var square [1000][1000]int
 	multipleClaimMap := make(map[Point]bool)
@@ -85,7 +85,7 @@ func PartOne(re *regexp.Regexp) {
 }
 
 func PartTwo(re *regexp.Regexp) {
-	data := parseData(readFile("data.txt"), re)
+	data := parseData(readFile("inputs/puzzle.txt"), re)
 
 	var square [1000][1000]int
 	intactClaimMap := make(map[int]bool)
